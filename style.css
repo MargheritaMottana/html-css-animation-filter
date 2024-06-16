@@ -128,11 +128,58 @@
 
 .ex-10-icon {
     font-size: 60px;
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Esercizio 11  */
+
+/* versione senza hover */
+/* .ex-11-icon {
+    font-size: 60px;
+    animation-name: turn;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes turn {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+} */
+
+/* versione con hover */
 .ex-11-icon {
     font-size: 60px;
+    transition: transform 1s ease-in;
 }
+
+.ex-11-icon:hover {
+    transform: rotate(270deg);
+}
+
+/* Esercizio 12 - 13 */
 
 .ex-12-button,
 .ex-13-button {
