@@ -132,6 +132,7 @@
     animation-duration: 1.5s;
     animation-direction: normal;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes rotate {
@@ -146,10 +147,11 @@
 
 /* Esercizio 11  */
 
-/* versione senza hover */
-
-/* .ex-11-icon {
+.ex-11-icon {
     font-size: 60px;
+}
+
+.ex-11-icon:hover {
     animation-name: turn;
     animation-duration: 1.5s;
     animation-direction: normal;
@@ -168,17 +170,6 @@
     100% {
         transform: rotate(0deg);
     }
-} */
-
-/* versione con hover */
-
-.ex-11-icon {
-    font-size: 60px;
-    transition: transform 1s ease-in;
-}
-
-.ex-11-icon:hover {
-    transform: rotate(270deg);
 }
 
 /* Esercizio 12 - 13 */
